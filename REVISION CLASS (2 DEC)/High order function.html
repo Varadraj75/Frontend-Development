@@ -41,6 +41,24 @@
             return val>7
         })
         console.log(filteredArr)
+
+       let total =  arr.reduce(function(acc,curr,arr){
+            // console.log(acc);
+            
+            return acc+=curr
+        })
+        console.log(total);
+
+        let fruits=["orange","banana","apple","grapes","orange","apple","cherry"];
+
+        let dictfruits=fruits.reduce(function(acc,curr){
+            // console.log(acc);
+            acc[curr]=(acc[curr]||0)+1
+            return acc
+        },{})
+        console.log(dictfruits);
+        
+        
     </script>
 </body>
 </html>
