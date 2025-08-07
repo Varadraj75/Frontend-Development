@@ -1,0 +1,114 @@
+Heading tags : they are bold itself
+<h1> </h1>
+<h2> </h2>
+<h3> </h3>
+<h4> </h4>
+h5
+h6
+
+
+Paragraph tag: <p> </p>
+
+Formatting tags: 
+bold <b> </b>
+underlink <u> </u>
+italic <i> </i>
+mark <mark> </mark>  <!-- to highlight the text -->
+small <small> </small>  to lowercase the element 
+delete <del> </del>   to stike of the content
+
+
+
+subscript and superscript
+<sup> </sup>  , the text moves litle bit upwards
+<sub> </sub> , the text moves little bit downwards
+
+
+<hr/> -- to build the horizontol line between the content
+<br/> to add the space between the two content
+
+
+Information about tags : attributes
+
+Image: 
+
+<img src="Link of the Image" alt="" width = "px" height = "px"   />
+
+src --> source tag , that consists of the url of the Image
+alt --> alternative text
+width --> to add the width of the Image
+height --> to add the height of the Image
+
+
+Adding Links: know as anchor tag 
+<a href=""> content  </a>
+
+href: it is the attributes that defines the link destination.
+
+
+
+void Elements: 
+<img/>
+<hr>
+
+
+
+Lists: group a set of related items in a Lists
+
+Example:
+
+Unordered , ordered list , Description Lists 
+
+Unordered Lists : no specific ordered , These lists are typically marked with bullets 
+
+* Shruti 
+* Ria 
+* Aman 
+
+Ordered Lists : Order of the items is important. Sequencing can be done with numbers or alphabets. 
+
+1.
+2.
+3.
+
+
+A.
+B.
+C.
+
+Description Lists: These lists basically contains items and their Description. <dl></dl>  (it is used to give description in the list)
+<dt></dt>
+<dd></dd>
+
+
+
+Colour in the text:-
+Style:colour  --> to give colour in the text use in the main syntax line 
+Style:backgroundcolour --> to give the background colour in the text 
+
+
+
+Tables: (combination of rows and coloums)
+<table>
+<tr> </tr> :defines rows
+<th> </th> :defines header
+<td> </td> :defines data 
+</table>
+
+
+
+FORMS : 
+<forms>Defines the form for user Input </forms> 
+<input> 
+1. button
+2. checkbox
+3. date
+4. file
+5. password
+6. email
+7. submit 
+8. text
+9. number
+10. range
+11. radio
+for more forms check forms.html and task4.html

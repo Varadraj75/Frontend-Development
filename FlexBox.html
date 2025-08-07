@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FlexBox</title>
+    </head>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: blue;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            height: 500px;
+            
+            align-content: center;
+        }
+        .flex-container>div{
+            background-color: azure;
+            width: 200px;
+            margin: 10px;
+            padding: 20px;
+            font-size: 50px;
+          
+        }
+         .div2{
+            width: 200px;
+            height: 50px;
+         } 
+        .div3{
+            width: 20px;
+            height: 25px;
+        }
+    </style>
+    <body>
+        <div class="flex-container">
+            <div>1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,213 @@
+Java script is the programming language of web 
+it can update anc both both html and css
+
+JavaScript Variables--> it is like a container to store the data.
+
+var num=10; 
+let num=9;
+const b=10;
+
+Declaration of variables: var,let and const
+
+var name ="shruti";
+var age = 10;
+let num=10 ,  num 2=20 , num3= 30;
+
+console.log(age); //10
+
+
+Rules for naming javascript variables:
+1. The name of the variables can consist of alphabets (a-z), (A-Z) , (0-9) and $ , _
+2. The name of the variables can start with letter , uderscore or dollar.
+3. The variable names are case sensetive (A and a will be treated diferently)
+4. The variables names must not be a reserved keyword.
+
+let @name = 12; //invalid
+let _hello = 12; //valid
+let 12name = "shriya"; //invalid
+let const = "hello"; //invalid
+
+
+Constants-->
+it is a type of variable whose value cannot be changed.
+const num=10; //this value can't be changed 
+num=5; //invalid command 
+
+
+DATA TYPES: different types of values that you an use in javascript
+
+8 basic data types:-
+
+1. String: textual data "Hello" , 'hello' , `hello`  
+2. Number: An interger or floating point 3,3,25
+3. BigInt: bigger int Number
+4. Boolean: true or false
+5. undefined: no value is assigned example let a;
+6. null: denotes a null values;
+7. Symbol:
+8. object
+
+
+Primitive Data types: 1 to 7 are Primitive datatypes.
+Non Primitive data types --> object.
+
+
+
+typeof: this is basically used to check the data type of a variable.
+let name ="varad";
+console.log(typeof name);
+
+
+
+
+//comments: These are the annotations that are ignored by compiler.
+There are 2 ways to add a comments :- Single Line comments , Multi Line comments.
+
+// -> single Line
+/* write the comments here  */ --> multi line comments 
+
+
+
+
+Operators : These are the special symbols that perform operations on one or more operands
+
+Types of operators:
+
+1. Arithmetic Operator
+2. assignment Operator
+3. Comparison Operator
+4. Logical Operator
+5. Bitwise Operator 
+6. String Operator 
+7. Miscellenous
+
+
+Arithmetic Operator : Addition , subtraction , multiplication , division 
+console.log(2+3);
+console.log(2-3);
+console.log(2*3);
+console.log(2/3);
+console.log(2%3);
+
+
+Increment and Decrement Operator:
+let a =10; 
+console.log(a++); //post Increment
+console.log(++a); //pre Increment
+console.log(--a); //pre Decrement
+console.log(a--); //post Decrement
+
+
+assignment Operator: to assign the values to Operator
+
+let x=10; 
+x + = 5; //Addition assignment x=x+5;
+x -=5; // Subtraction Assignment 
+x*=5; // Multiplication Assignment
+x /=5; //division assignment
+
+
+Comparison Operator : it is used to compare two values and return a boolean value. it returns boolean value
+
+const a=3;
+const b=2;
+console.log(a==2); //false
+console.log(a>b); //true
+console.log(a<b); //false
+
+== --> equal to 
+=== --> basically checks the value and data types
+!= 
+>=
+<=
+>
+<
+
+let a=10;
+let b="10";
+
+console.log(a==b); //true 
+console.log(a===b) //false because a is storing int and b is storing string type.
+
+
+
+Logical operators:
+
+&& --> return true if both expression are true , else false
+|| --> return true if any of them is true else false
+! --> if true , return false .. if false , return true
+
+let x=3;
+console.log(x>0 && x<5); //true
+console.log(x>0 && x>5); //false
+console.log(x>0 || x>5); //true
+
+
+let y=true;
+console.log(!y); //false
+
+
+
+
+
+string concatenation: 
+let a="hello";
+let b="world";
+console.log(a+b); //helloworld
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Type Conversion: Converting the data from one type to another type.
+
+Converting string to number 
+
+There are two types of conversion: Implicit Conversion and Explicit Conversion
+
+Implicit : automatic conversion
+Explicit: Manual type 
+
+
+Implicit example->
+let result;
+result="3"+2; //number will be converted to string.
+console.log(result +" " + typeof result); //32 string
+
+
+Explicit example: 
+let result= Number("3");
+console.log(result+" "+ typeof result); // 3 number
+
+result= String(true);
+console.log(result+" "+ typeof result); //True string
+
+
+result = Number(true);
+console.log(result+" "+ typeof result); //1 Number
+
+
+result = Boolean(0);
+console.log(result+" "+ typeof result); //False Boolean
+
+result = "4"-"2";
+console.log(result+" "+ typeof result); //2  Number
+
+result = "4"- 2;
+console.log(result+" "+ typeof result); //2  Number
+
+result = 4-"2";
+console.log(result+" "+ typeof result); //2  Number
+
+
+result = "hello"-2;
+console.log(result+" "+ typeof result); //NaN Number
+
+
+result = 2-"hello";
+console.log(result+" "+ typeof result); //NaN Number
+
+
+result = "hello"-"arad";
+console.log(result+" "+ typeof result); //Not possible
+

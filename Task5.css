@@ -1,0 +1,34 @@
+
+
+p{
+    color: tomato;
+}
+
+#random{
+    color: tomato;
+    text-align: center;
+}
+
+.intr{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 2px;
+    text-transform: lowercase;
+    text-decoration: underline;
+    text-align: center;
+    color: aquamarine;
+    background-color: violet;
+    align-self: auto;
+}
+*{
+    background-color: springgreen;
+    text-align: justify;
+    background-image: url(https://i.sstatic.net/bkC9s.jpg);
+    background-repeat: repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+    
+}
