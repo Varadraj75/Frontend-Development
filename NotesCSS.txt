@@ -1,0 +1,264 @@
+css: Cascading style sheet
+
+HTML: create the structure of webpage 
+
+css: Beautify the webpage
+
+Three ways to add CSS : 
+
+1. inline CSS --> can use style in the tags itself
+2. Internal CSS --> <style> </style>
+3. External CSS --> to link css in the html page , <link rel="stylesheet" href="Task5.css" /> 
+
+Question:- Create a simple page and add a heading to it . apply inline , internal and external css to it.
+what do u think which will be applied among three on priority.
+
+Answer:- Inline >> Internal >> External
+
+A css rule is made up of selector and decleration block
+declerations have a property and a value
+
+
+
+Selectors:
+1. universal (*)
+2. class (.)
+3. id (#)
+4. element (by directing writing the element tag)
+
+
+
+background: image , colour
+certain property of background in css
+background attachment: scroll , fixed , local , inherit , initial , position
+
+
+CSS fonts ; how the text will appear on the page 
+
+key properties of css fonts are: 
+
+1. font-family : specifics the type of font 
+2. font-size
+3. font-weight: thickness
+4. font-style: italic
+5. line-height: spaces between lines of text
+6. letter-spacing: spaces between the characters 
+7. text-transformation: controls the capitalisation
+
+
+Colours :
+RGB, HEX , HSL , RGBA , HSLA 
+
+COLOR NAME:
+color: 
+
+rgb(255,255,255,0.5)  so in this color we can give maximum 255 value and first stands for red , second stands for green and third stands for blue and the last one stands for the transperacy of the color
+rgb: red,green,blue : range 0-255
+
+hex: rrggbb
+#ffffff
+#000000
+#ff0000
+
+hsl: 
+hue,saturation,lightness
+0-360 --> (0 will be red , 120 will be green and 240 will be blue)
+0% --> shades of gray
+100% --> full color 
+lightness --> 0% black , 50% --> neither light nor dark , 100% white 
+
+Boarders : allow you to specify the style , width , color of an element border
+
+border-style: type of border 
+
+dotted 
+dashed
+solid
+double groove
+ridge
+inset
+outset
+none
+hidden
+
+border-width: 
+1 1 1 1 
+t r b l  --> top , right , bottom , left 
+
+2 3 4
+top rl, bottom
+
+5 20 
+t/b l/range
+
+border-color ,border-radius
+
+
+Margins: These are basically used a create a space around element , outside of any defined Boarders
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+margin: 25px 50px 75px 100px;
+in these --> top-margin :25px
+             right-margin : 50px
+             bottom margin : 75px
+             left: 100px
+
+margin: 25px 50px 75px ;
+25 top , 50 left/right , 75 is for bottom
+
+margin: 25px  100px;
+25 for top and bottom , 100px is for left and right 
+
+
+padding; 
+
+what is the difference between margin and padding?
+ans--> in padding it adds the space in border and inner contains
+
+padding-top: 25px;
+padding-bottom: 25px;
+padding-left: 25px;
+padding-right: 25px;
+
+padding: 10px 10px 10px 10px 
+top , left , right , bottom
+
+padding: 10px 30px 10px;
+top , left/right , bottom
+
+padding: 10px 30px;
+top/bottom , left/right
+
+
+
+Float property: specifics how and element should float  --> float
+
+positionaing and formatting content 
+
+left:
+right: 
+none:
+inherit:
+
+
+
+Overflow :
+This property controls what happens to the content that is too big to fit into the area
+
+whether to clip the content or to add the scrollbars when the content is too big to fit 
+The overflow:
+
+visible
+hiddenscroll
+auto
+
+
+
+SHADOW :
+1. Text SHADOW : applies shadow to text
+2. box-shadow : applies shadow to box
+
+TEXT-SHADOW: specify the horizontal shadow and vertical shadow 
+
+horizontal shadow: 25px
+vertical shadow : 2px
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Flex Box : flexible box layout 
+
+It is a layout method for arranging items in a row or column. 
+
+A flexbox always consists of two components : 
+
+1. Flex container : the parent container <div></div>
+2. Flex Items : The items inside the container div 
+
+CSS properties used for the flex-container : 
+
+1. flex-direction 
+2. flex-wrap 
+3. flex-flow 
+4. Justify content 
+5. align-items
+6. align-content 
+
+Flex-direction : specifies the display direction of flex-items in the flex-container 
+
+flex-direction : value can be  (row, column, row-reverse, column-reverse)
+
+Flex-wrap property : specifies whether the flex-items should wrap or not. 
+
+flex-wrap : nowrap, wrap, wrap-reverse
+
+Flex-flow : shorthand property for setting both the flex direction and flex-wrap properties. 
+
+flex-flow : row wrap 
+
+Justify Content : It is used to align the flex-items when do not use all the available space on the main axis horizontal
+
+center 
+flex-start 
+flex-end 
+space-around 
+space-between 
+space-evenly
+
+
+Align-Items : It is used to align the flex-items when do not use all available space vertically. 
+
+Align-Items : 
+
+center, flex-start, flex-end, stretch, baseline, normal
+
+ALIGN-CONTENT : is used to align the flex lines 
+
+center, stretch, flex-start, flex-end, space-around, space-between, space-evenly
+
+
+
+
+// Create a sample web page and use all the properties. 
+
+
+
+properties of flex-items:
+order
+flex-grow
+flew-shrink
+flex-basis
+flex 
+align-self
+
+order: specifics the order of flex-items
+Flex-grow: specifics how much a flex-item will grow relative to the the rest of the item 
+flex-shrink
+flex-basis
+allign-self
+
+
+CSS transitions: allow you to change property values smoothly , over a given duration.
+
+transition , transition-delay, transition-duration, transition-property, transition-timing-function
+
+how to use transition:
+
+The css property you want to add an effect
+duration of effect
+
+Specify the speed curve of transition:
+ease: slow start , then fast , then end slow
+linear : space speed from start to end 
+ease-in : slow start
+ease-out: end slow
+ease-in-out: slow start and end
+cubic-beizer: define your own values
+
+
+transition-delay --> to give delay to the transition effect.
