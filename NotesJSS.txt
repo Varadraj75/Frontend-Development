@@ -211,3 +211,11 @@ console.log(result+" "+ typeof result); //NaN Number
 result = "hello"-"arad";
 console.log(result+" "+ typeof result); //Not possible
 
+
+
+
+
+we have to use prompt to enter the value from the user
+
+
+
