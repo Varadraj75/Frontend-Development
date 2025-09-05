@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    text-decoration-style: wavy;
+    text-decoration-line: underline;
+    text-decoration:solid underline yellowgreen;
+
+}
+div{
+    color: aqua;
+    height: 300px;
+    width: 300px;
+    /* rgb values range from 0 to 255 */
+    background-color: #ccde53;
+    margin: auto;
+    border: 2px solid red;
+/* to make it in circle  */
+    /* border-radius: 50%; */
+    /* horizontal , vertical , transparency , saturation  */
+    box-shadow: 10px 10px 5px 10px;
+    margin-top: 10px;
+    text-align: center;
+    /* margin works with negative value but padding doesn't */
+    /* it is the space between the border and the content */
+    padding: 10px;
+}
