@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    height: 200px;
+    width: 300px;
+    margin: auto;
+    border: 2px solid red;
+    margin-top: 50px;
+    
+}
+.abc{
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
+    color: blue;
+    font-style: italic;
+    font-size: large;
+    font-weight: 800;
+    
+}
+.rac{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: green;
+    padding: 15px;
+    font-weight: 500;
+
+}
+.center{
+    color: blue;
+    padding: 15px;
+    font-weight: 500;
+}
+#exe{
+    color: red;
+    padding: 10px;
+}
