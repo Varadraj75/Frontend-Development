@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Pseudo class</title>
+    <style>
+        input:focus{
+            background-color: yellow;
+        }
+        input:hover{
+            background-color: red;
+        }
+        button:hover{
+            background-color: red;
+        }
+        button:active{
+            background-color: blue;
+        }
+        li:nth-child(even){
+            background-color: red;
+        }
+        /* using nth-child to target the number of chil  */
+        li:nth-child(odd){
+            background-color: aqua;
+        }
+        /* li first child and last child */
+    </style>
+</head>
+<body>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="nameinput" placeholder="Your name?" />
+    <button>click me</button>
+    <!-- using emeet -->
+     <ul>
+        <li>Hey this is me varad</li>
+        <li>Hey this is me varad</li>
+        <li>Hey this is me varad</li>
+        <li>Hey this is me varad</li>
+        <li>Hey this is me varad</li>
+        <li>Hey this is me varad</li>
+        <li>Hey this is me varad</li>
+        <li>Hey this is me varad</li>
+        <li>Hey this is me varad</li>
+        <li>Hey this is me varad</li>
+     </ul>
+</body>
+</html>
