@@ -10,3 +10,7 @@
 div+li{
     color: aqua;
 }
+
+input[placeholder]{
+    background-color: brown;
+}
