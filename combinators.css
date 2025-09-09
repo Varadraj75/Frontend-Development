@@ -1,0 +1,12 @@
+/* using the nth-child we have to use the tag  */
+/* li:nth-child(2n){
+    color: aqua;
+} */
+
+/* ul > li{
+    color: brown;
+} */
+
+div+li{
+    color: aqua;
+}
