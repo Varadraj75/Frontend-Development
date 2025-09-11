@@ -13,25 +13,38 @@
         body{
             height: 200vh;
         }
-        .random{
-            height: 200vh;
-            width: 200px;
-        }
-        .random>div{
-             height: 200px;
-            width: 200px;
-        }
-        h1{
+        header{
+            width: 100vw;
             text-align: center;
-            background-color: aquamarine;
-            color: black;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: larger;
             position: fixed;
+            
+        }
+        aside{
+
         }
     </style>
 </head>
 <body>
-    <div class="random">
-    <h1>Fixed <header></header></h1>
+    <div>
+    <header>Fixed header</header>
     </div>
+
+    
+    <aside>Sidebar (absolute)</aside>
+
+    <main>
+        <aside class="sticky-widget">Sticky widget (Scroll to see effect)</aside>
+
+        <section>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iure sed quos facilis ab voluptate laborum veritatis similique aliquam maxime vero nisi expedita odio labore non iste excepturi optio quis unde quo quam nihil nemo vitae? Itaque, illum sequi! Veritatis aliquid nulla delectus voluptate assumenda quos, enim explicabo atque eum magni qui iste fuga doloremque placeat incidunt quaerat fugit. Voluptatibus, inventore. Optio neque labore quidem. Nostrum facere sapiente labore harum commodi alias rerum non laborum ut quod cupiditate, voluptatibus beatae rem ipsa, officiis magnam veritatis aspernatur inventore? Dolor quos vel fugiat impedit aut optio velit culpa, temporibus rem, quasi autem!</p>
+            <p>More content.. (add as much as needed)</p>
+            <p style="height: 120px;"></p>
+
+        </section>
+    </main>
+
 </body>
 </html>
