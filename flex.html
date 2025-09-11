@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            /* flex by default value is row */
+            display: flex;
+            flex-direction: row-reverse;
+            /* it will give gap between the flex */
+            gap: 20px;
+        }
+        .container > div{
+            height: 200px;
+            width: 200px;
+        }
+        .box1{
+            background-color: red;
+        }
+         .box2{
+            background-color: rgb(10, 216, 154);
+        }
+         .box3{
+            background-color: rgb(255, 0, 225);
+        }
+         .box4{
+            background-color: rgb(128, 0, 182);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+</body>
+</html>
