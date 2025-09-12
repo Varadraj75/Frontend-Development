@@ -8,9 +8,18 @@
         .container{
             /* flex by default value is row */
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: column;
             /* it will give gap between the flex */
             gap: 20px;
+            /* justify-content: center; -> just allign the things to center */
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            /* align item will access the Y axis */
+            align-items: center;
+            height: 100vh;
         }
         .container > div{
             height: 200px;
