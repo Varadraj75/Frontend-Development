@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Sibling Selector Example</title>
+  <style>
+    /* Style only the first special paragraph */
+    /* .special {
+      color: white;
+      background-color: darkblue;
+      padding: 10px;
+    } */
+
+    /* All paragraph siblings that come after .special */
+    /* .special ~ p {
+      color: darkred;
+      font-style: italic;
+      background-color: #ffe5e5;
+      padding: 8px;
+    } */
+    :root{
+        --text-color:red;
+    }
+    p{
+        height: 10vh;
+        width: 10vw;
+        color: var(--text-color);
+    }
+  </style>
+</head>
+<body>
+  <h2>General Sibling Selector Example</h2>
+
+  <p>This paragraph is before the special one — not affected.</p>
+
+  <p class="special">This is the special paragraph.</p>
+
+  <p>This paragraph is a sibling AFTER the special one (styled using ~).</p>
+  <p>This one also comes after the special one (styled using ~).</p>
+
+  <div>I'm a div, not affected because I'm not a &lt;p&gt;.</div>
+
+  <p>This is also a paragraph after the special one (styled using ~).</p>
+</body>
+</html>
