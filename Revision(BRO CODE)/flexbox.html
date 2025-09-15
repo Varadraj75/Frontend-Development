@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        *{
+            margin: 1px;
+            padding: 0%;
+        }
+        .container{
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* justify content will allign the flex in the way we want */
+            height: 90vh;
+            border: 10px solid black;
+            /* justify-content is used to X axis */
+            /* justify-content: space-between; */
+            /* align-items is to allign in Y axis */
+            /* align-items: baseline; */
+
+            /* flex-wrap: wrap;
+            align-content: start;
+            column-gap: 1em;
+            row-gap: 1em; */
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            font-size: 8em;
+            text-align: center;
+            border-radius: 15px;
+        }
+        #box1{
+            
+            background-color: red;
+            align-self: end;
+            /* order: -1; */
+        }
+         #box2{
+            background-color: rgb(32, 208, 120);
+        }
+        #box3{
+            background-color: rgb(198, 49, 236);
+            order: -1;
+        }
+        #box4{
+            background-color: rgb(225, 56, 112);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <!-- <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div> -->
+    </div>
+</body>
+</html>
