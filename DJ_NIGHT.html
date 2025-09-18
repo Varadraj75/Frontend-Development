@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Transform</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+                }
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: whitesmoke;
+            animation-name: spin;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes spin{
+            0%{
+                background-color: yellow;
+                transform: rotate(90deg);
+            }
+            20%{
+                background-color: brown;
+                border-radius: 50%;
+            }
+            40%{
+                background-color: cyan;
+            }
+            60%{
+                background-color: lightseagreen;
+                border-radius: 50%;
+            }
+            80%{
+                background-color: red;
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
