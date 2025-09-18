@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: white;
+            animation-name: spin;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+
+        @keyframes spin {
+            
+
+            50% {
+                background-color: red;
+                transform: translate(0, calc(50vh - 200px));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
