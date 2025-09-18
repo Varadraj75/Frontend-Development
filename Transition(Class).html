@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Transition</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border-radius: 10%;
+            background-color: greenyellow;
+            cursor: pointer;
+            transition-property: scale , transform , background-color;
+            transition-duration: 3s;
+            transition-timing-function: ease;
+            /* transition-delay: 1s; */
+            transform: translateX(-200px);
+            
+
+        }
+        .box:hover{
+            /* height: 400px;
+            width: 500px; */
+            scale: 2;
+            transform: rotateX(120deg);
+            background-color: brown;
+            transform: skewX(78deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    </div>
+</body>
+</html>
