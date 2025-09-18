@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+       
+        p{
+            position: fixed;
+            background-color: black;
+            color: whitesmoke;
+            top: 45%;
+            left: 42%;
+            font-family: cursive;
+            font-size: 30px;
+        }
+        .container{
+            height: 100vh;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            background-color: black;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: whitesmoke;
+            animation-name: spin;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+       @keyframes spin{
+        0%{
+            background-color: bisque;
+        }
+        25%{
+            transform: translate(calc(100vw - 200px),0);
+            background-color: yellow;
+        }
+        50%{
+            transform: translate(calc(100vw - 200px) , calc(100vh - 200px));
+            border-radius: 50%;
+            background-color: red;
+        }
+        75%{
+            transform: translate(0 , calc(100vh - 200px));
+        }
+        100%{
+
+        }
+       }
+    </style>
+</head>
+<body>
+    <p>HEy this is me _ Dancing 🕺</p>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
