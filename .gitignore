@@ -1,1 +1,29 @@
 Video.mov
+Bootstrap
+.vscode
+# Dependencies
+node_modules/
+vendor/
+
+# Build output
+dist/
+build/
+out/
+
+# Logs & temp files
+*.log
+*.tmp
+
+# Environment variables
+.env
+.env.local
+
+# IDE / System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# JDKs (too large to store in repo)
+*.jdk/
+oracleJdk-24.jdk/
