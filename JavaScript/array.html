@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = ["varad", "yadavji", "nishant"];
+      let child = new Array();
+      arr.push("tanay");
+      console.log(arr.pop());
+      console.log(arr.shift());
+      console.log(arr.unshift("yuvrajas"));
+      console.log(arr);
+// pop -> remove from end , push -> add from the end
+// shift-> remove from start , unshift -> add in the start
+      let firstElement = arr.shift();
+      arr.push(firstElement);
+      console.log(arr);
+      let count = prompt("Rotaion count");
+      for (let i = 0; i < count; i++)
+      {
+        let fist = arr.shift();
+        arr.push(fist);
+        console.log(arr);
+      }
+    </script>
+  </body>
+</html>
