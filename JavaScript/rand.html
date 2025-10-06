@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Assignment</title>
+</head>
+<body>
+<script>
+// Task 1:
+var n  = prompt("Please enter your name")
+console.log("Hello, ",n," Welcome to JavaScript land")
+// Task 2:
+let value = prompt("Please enter an number");
+value = parseInt(value);
+const lucky_number = `the lucky number is ${value * value}`
+console.log(lucky_number);
+// TASK 3:
+var product_name = prompt("Enter the product name")
+var product_price = prompt("Enter the product Price")
+product_price = parseInt(product_price);
+let final_bill = `You added ${product_name} worth ${product_price} rupees to your cart 🛒`
+console.log(final_bill);
+// Task 4:
+let user_name = prompt("Enter your name please ")
+let slice = user_name.slice(0,3);
+slice = slice.toUpperCase();
+const final_updated = slice+"inator";
+console.log(final_updated);
+// TASK 5:
+var first_num  = prompt("Enter the first number");
+var second_num  = prompt("Enter the first number");
+console.log("Add",first_num+second_num);
+console.log("Subtraction",first_num-second_num);
+console.log("Multiplication",first_num*second_num);
+console.log("Division",first_num/second_num);
+console.log("Remainder",first_num%second_num);
+// TASK 6:
+let score = prompt("Enter the Marks between 0-100")
+if(90 <= score){
+console.log("A Grade 🏆");
+}
+else if(90<= score && score>=75){
+console.log("B Grade 👏");
+}
+else if(75<=score && score>=50){
+console.log("C Grade 🙂");
+}
+else if(50>=score){
+console.log("Fail 😢(Study Hard...)");
+}
+//TASK 7:
+let hunger = prompt("Are you hungry? (Yes or No)")
+"Yes" == hunger ? "Grab Pizza🍕" : "Do coding 👩‍💻"
+
+</script>
+<h1 style="text-align: center; font-size: larger; color: lightpink;">JavaScript Assignment</h1>
+</body>
+</html>

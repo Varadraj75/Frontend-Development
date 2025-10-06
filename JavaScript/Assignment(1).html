@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 1: Hello, Stranger!
+        let x = prompt("Enter your name")
+        console.log("Hello, ",x," Welcome to JavaScript land")
+        // Task 2: Lucky Number
+        let y = prompt("Please enter an integer");
+        y= parseInt(y);
+        var j = `the lucky number is ${y*y}`
+        console.log(j);
+        // TASK 3: Mini Cart
+        let item = prompt("Enter the product")
+        let price = prompt("Enter the product price")
+        price = parseInt(price);
+        let bill = `You added ${item} worth ${price} rupees to your cart 🛒`
+        console.log(bill);
+        // Task 4 : Funny Nickname
+        let name = prompt("Enter your name ")
+        let sli = name.slice(0,3);
+        sli = sli.toUpperCase();
+        let k = sli+"inator";
+        console.log(k);
+        // TASK 5:➕ Simple Calculator
+        let a = prompt("Enter the first number");
+        let b = prompt("Enter the first number");
+        console.log(a+b);
+        console.log(a-b);
+        console.log(a*b);
+        console.log(a/b);
+        console.log(a%b);
+        // TASK 6: Grade Evaluator
+        let marks = prompt("Enter your marks between 0-100")
+        if(90<=marks){
+            console.log("A Grade 🏆");
+        }
+        else if(90<= marks && marks>=75){
+            console.log("B Grade 👏");
+        }
+        else if(75<= marks && marks>=50){
+            console.log("C Grade 🙂");
+        }
+        else if(50>=marks){
+            console.log("Fail 😢");
+        }
+        //TASK 7:Ternary Operator
+        let hungry = prompt("Are you hungry? (Yes or No)")
+        "Yes" == hungry ? "🍕 Grab Pizza" : "💻 Stay Coding"
+    </script>
+</body>
+</html>

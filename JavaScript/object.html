@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name="nishant"
+        let varad ={
+            name: "Varad",
+            age: "18",
+            email:"agrawalvaradraj2007@gmail.com",
+            talking: function(){
+                return "Talking........"
+            },
+            walking: () => {
+                console.log(this,"inside arrow fn");
+
+                return this.name + " walking";
+            },
+        };
+        console.log(varad.talking());
+        console.log(varad.walking());
+        console.log(varad.walking());
+        console.log(varad["email"]);
+        for(let key in varad){
+            console.log(varad[key]);
+        }
+        console.log(Object.entries(varad));
+        console.log(Object.Keys(varad));
+        console.log(Object.values(varad));
+        varad.name="new";
+        console.log(varad);
+
+        delete varad['name']
+        console.log(varad);
+    </script>
+</body>
+</html>

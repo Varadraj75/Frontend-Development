@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task1: Age Category Checker
+        let age = prompt("Enter your age")
+        if(age<18){
+            console.log("Minor");
+        }
+        else if(age>=18 & age<60){
+            console.log("Adult");
+        }
+        else if(age>=60){
+            console.log("Senior");
+        }
+        // Task2: Introduction Formatter
+        let formatter_name = prompt("Enter your name");
+        let formatter_age = prompt("Enter your age");
+        let formatter_hobby = prompt("Enter your hobby");
+        console.log(`My name is ${formatter_name}, I am ${formatter_age} years old, and i enjoy ${formatter_hobby}`);
+        // Task3: Sign of Number
+        var num = prompt("Input a integer");
+        if(num<0){
+            console.log("Negative value");
+        }
+        else if(num>0){
+            console.log("Positive value");
+        }
+        else if(num == 0){
+            console.log("Zero");
+        }
+        // Task4: FizzBuzz Enhancement
+        let userInputs = new Array(5);
+        for(let i=0; i<5; i++){
+            userInputs[i] = prompt("Enter the value",i+1)
+            if(userInputs[i]%3==0){
+                userInputs[i]="Fizz is divisible by 3";
+            }
+            else if(userInputs[i]%5==0){
+                userInputs[i]="Buzz is divisible by 5";
+            }
+            else if(userInputs[i]%3 ==0 & userInputs[i]%5==0){
+                userInputs[i]="FizzBuzz is divisible by both"
+            }
+        }
+        console.log(userInputs);
+    
+        // Task5: Marks Analyzer
+        let n = Number(prompt("Enter the number of students"));
+        
+        let arr = new Array(n);
+        let sum =0;
+        for(let i=0; i<n; i++){
+            arr[i]=Number(prompt("Enter your marks"));
+        }
+        let min = arr[0];
+        let max=arr[0];
+        for(let i =0 ; i<n; i++){
+            if(arr[i]<min){
+                min = arr[i];
+            }
+            if(arr[i]>max){
+                max = arr[i];
+            }
+            sum += arr[i];
+        }
+         let avg = sum / n;
+        console.log("The max marks",max);
+        console.log("The min marks",min);
+        console.log("The average marks",avg);
+
+        // Task6: Reverse Array 
+        let ar=[1,2,3,4,5,6]
+        console.log(ar.reverse());
+
+        // Task7: Sum using Rest Parameters
+        let input = prompt("Enter the number");
+        let arrr = input.split(" ").map(Number);
+        let summ=0;
+        for(let i=0; i<arrr.length; i++){
+            summ += arr[i];
+        }
+        console.log(summ);
+        
+        //Task8: Value vs Reference Demo 
+        // Not taught yet 
+
+        // Task9: Array Transformation using HOFs
+        // Not taught yet 
+
+        // Task10: Custom Calculation with Callback
+        // Not taught yet
+
+
+    </script>
+</body>
+</html>

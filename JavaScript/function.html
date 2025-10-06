@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function generatedBill(amount1 , amount2){
+            var total = amount1 +amount2;
+            return "hello sir your bill " +total;
+        }
+        console.log(generatedBill(300,400));
+        function gb(...amounts){
+            console.log(amounts);
+            let totalsum = 0;
+            for (let i=0; i<amounts.length;i++)
+            {
+                totalsum += amounts[i];
+            }
+            return totalsum;
+        }
+        console.log(gb(10,20,30,405,50223));
+        function eve(n)
+        {
+            if(n%2===0)
+            {
+                console.log("Even")
+            }
+            else{
+                console.log("odd")
+            }
+        }
+        let k = prompt("Enter a number");
+        // k=k.parseInt();
+
+        eve(k);
+        // function even(o)
+        // {
+        //     let a =n%2==0? true: false
+        //     return a;
+        // }
+        // even(k);
+
+        console.log(window);
+        console.log(sayhello)
+
+        
+        function pranjal()
+        {
+            console.log("Hey its me ");
+        }
+        var sayhello = function(){
+            console.log("Hello Varad");
+        }
+
+        let multiply =(a,b) => {
+            return a*b;
+        }
+        console.log(multiply(2,3));
+        let multipl =(a,b) => a*b ;
+        console.log(multipl(2,5));
+        
+        sum=0;
+        let arr =[1,2,3,4,5,5,10];
+        for(let elements of arr)
+        {
+            sum+= elements
+        }
+        console.log(sum);
+        let max = arr[0];
+        for(let i=0; i<arr.length; i++){
+            if(max<arr[i]){
+                max=arr[i]
+            }
+        }
+        console.log("max value",max);
+        let obj={name:"varad",dept:"cse",email:"jo@gmail.com"}; //by object literals
+        let obj1 = new Object(); // object using instance
+        console.log(obj);
+        console.log(obj.name);
+        console.log(obj['dept']);
+        obj['dept']="NOne"
+        delete obj["dept"];
+        console.log(obj);
+        
+
+        
+
+        
+    </script>
+</body>
+</html>
