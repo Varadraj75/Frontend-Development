@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let varad={
+            name:"varad",
+            email:"v@gmail.com",
+        };
+        let stats={
+            salary:7000000000000000000000000000000000000,
+            dept:"Data Enginer",
+        };
+        let copy={...varad , ...stats};
+        console.log(copy,varad);
+
+        let obj={
+            name:"varad",
+            email:"v@gmail.com",
+        };
+        let obj1 = obj
+        obj1.name = "Raj"
+        console.log(obj);
+
+        let obj2={...obj}
+        let obj3= structuredClone(obj)
+
+        let obj1 = JSON.parse(JSON.stringify(obj));
+        obj1.subject.cse="JavaScript";
+        console.log(obj, obj1);
+        console.log(JSON.parse(JSON.stringify(obj)));
+        
+        // callback
+        function calculator(a,b, callback){
+            // Vast function having lot of functionality
+            return `The total calculated value is ${callback(a,b)}`;
+        }
+        function addition(a,b){
+            return a+b;
+        }
+        function subtraction(a,b){
+            return a-b;
+        }
+        function multiplication(a,b){
+            return a*b;
+        }
+        console.log(20,30,addition);
+        console.log(20,30,subtraction);
+        console.log(20,30,multiplication);
+        
+        let arr =[1,2,3,15,16];
+        arr.forEach(search);
+        function search(ele, i, arr){
+            if(ele>12) return ele;
+        }
+    </script>
+</body>
+</html>

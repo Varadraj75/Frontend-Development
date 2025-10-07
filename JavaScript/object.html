@@ -36,6 +36,25 @@
 
         delete varad['name']
         console.log(varad);
+
+        function factory(name){
+            return{
+                name,
+                car:"none",
+                money:"limited",
+                property:"unlimited",
+                talk: function(){
+                    return `Hello I am ${this.name} I am having this ${this.money}`
+                },
+            };
+        }
+        let car1 = new Car();
+        let car2 = new Car();
+        console.log(car1,car2);
+
+        let arr = new Array();
+        console.log(arr);
+        
     </script>
 </body>
 </html>
