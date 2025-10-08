@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // call by value -> independent
+        let varad =30;
+        let aryan = varad;
+        aryan = 40;
+        console.log(varad);
+        
+        // call by reference -> targeting the origin thing  -> dependent
+        let obj = {
+            name:"Aryan",
+            age:21,
+            talking: {lang: "hindi"}
+        }
+        let newObj = obj;
+        let spObj ={...obj} // it will make the problem in the when we call the obj inside the obj 
+        spObj.age=12;
+        spObj.talking.lang="eng"
+        newObj.age = 12;
+
+        // structured clone will make the deep copy of the obj
+        let newobj = structuredClone(obj);
+        
+        
+        
+        console.log(obj);
+    </script>
+</body>
+</html>
