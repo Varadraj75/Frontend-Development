@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // HOF stands for high order function 
+
+        let arr=[1,2,3,4,5,6];
+        let result = arr.forEach(eachElement)
+        arr.forEach()
+        function eachElement(ele , i , arr){
+            console.log(ele , i , arr);
+            if(ele==2 ){
+                console.log(ele);
+                return ele;              
+            }
+        }
+        console.log(result);
+
+        // using filter method 
+        let a = arr.filter(search)
+        function search(ele , i , a){
+            if(ele>3) return ele 
+        }
+
+        let resu = arr.filter((ele) => ele>3);
+        console.log(resu);
+        
+        let results = arr.map((ele) => ele*3 );
+        console.log(results);
+
+        let res = arr.reduce()
+        function sum(acc,curr){
+            console.log(acc,curr);
+        }
+    </script>
+</body>
+</html>
