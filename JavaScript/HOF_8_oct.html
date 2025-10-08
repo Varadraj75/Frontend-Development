@@ -11,7 +11,7 @@
 
         let arr=[1,2,3,4,5,6];
         let result = arr.forEach(eachElement)
-        arr.forEach()
+        arr.forEach() // it is used to iterate over the loop not to return anything
         function eachElement(ele , i , arr){
             console.log(ele , i , arr);
             if(ele==2 ){
@@ -27,16 +27,68 @@
             if(ele>3) return ele 
         }
 
+        //  filter will not return the full array 
+
         let resu = arr.filter((ele) => ele>3);
         console.log(resu);
         
+        // map will return the full array 
         let results = arr.map((ele) => ele*3 );
         console.log(results);
 
-        let res = arr.reduce()
+        // double pointer is used in reduce
+        let res = arr.reduce(sum)
         function sum(acc,curr){
             console.log(acc,curr);
+            // return curr;
+            return acc>curr?acc:curr
         }
+        console.log(res);
+
+        const number = [2,4,6,8];
+        let an = number.map((ele)=> ele*ele);
+        console.log(an);
+
+        const nums =[1,2,3,4,5,6];
+        let am = nums.filter((ele) => ele%2==0)
+        console.log(am);
+
+        const fruits=["apple" , "Banana" , "Mango"];
+        // for(let i=0; i<fruits.length; i++){
+        //     console.log(i,"Fruit:",fruits[i])
+        // }
+
+
+        //  using foreach
+        fruits.forEach((ele,i)=> {
+            console.log(`Index: ${i}, Fruits: ${ele}`);
+        })
+        const marks =[70,80,90];
+        let sum = marks.reduce(gg);
+        function gg(acc,curr){
+            
+            // return curr;
+            return acc+curr
+        }
+        console.log(sum);
+        
+        // Q1: Write a program using reduce() that returns an object showing how many odd and even numbers are present in the arry.
+        const count={
+    evencount: 0,
+    oddcount: 0
+}
+const nume = [1,2,3,4,5,6];
+nume.reduce(oo,1)
+function oo(acc,curr) {
+    if(curr%2 == 0){
+        count.evencount = count.evencount + 1
+    }
+    else {
+         count.oddcount = count.oddcount + 1
+    }
+}
+        
+console.log(count)
     </script>
 </body>
 </html>
