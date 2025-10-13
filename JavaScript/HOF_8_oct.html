@@ -89,6 +89,25 @@ function oo(acc,curr) {
 }
         
 console.log(count)
-    </script>
+
+
+
+const students=[
+    {name:"Aman",marks:85},
+    {name:"Riya",marks:92},
+    {name:"Karan",marks:78},
+]
+// use filter to solve it , print the name of the students who scored more than 80 marks
+// let mark = students.filter((ele) => ele.marks > 80);
+
+// mark.forEach((student) => {
+//     console.log(student.name);
+// });
+let resultss = students.filter(function(ele){
+    return ele.marks>80;
+})
+console.log(resultss);
+
+</script>
 </body>
 </html>

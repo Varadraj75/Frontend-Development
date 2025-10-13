@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let varad={
+            name:"varad",
+            property:"💰",
+            car:"🚘",
+            gold:"💰"
+        }
+        let rand={
+            name:"v",
+            property:"💰",
+            car:"🚘",
+            gold:"💰"
+        }
+        let ran={
+            name:"vra",
+            property:"💰",
+            car:"🚘",
+            gold:"💰"
+        }
+        
+        function factory(name){
+            return{
+                name,
+                property:"💰",
+                car:"🚘",
+                gold:"💰"
+            }
+        }
+        let sumit = factory("Varad");
+        let soumya = factory();
+        let aditya = factory();
+        console.log(sumit);
+        
+        // constructor function :- 
+
+        function Inherit(){
+            name,
+            this.property="💰",
+            this.car="🚘",
+            this.gold="💰"
+        }
+        let nam = new Inherit("Varad");
+        Inherit.prototype.hello="Hello World"
+        console.log(Varad.hello);
+    </script>
+</body>
+</html>
