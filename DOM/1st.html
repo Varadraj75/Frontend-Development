@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st</title>
+</head>
+<body>
+    <h1 class="grp">DOM</h1>
+    <h1 id="htag">New</h1>
+    <h1 id="htag">Very New</h1>
+    <p class="grp">Para</p>
+    <script>
+        // let h_tag = document.getElementById("htag")
+        // let h_tag = document.getElementsByTagName("h1")
+        // let h_tag = document.getElementsByClassName("grp")
+
+
+        // query selector will select only the first one 
+        // let h_tag = document.querySelector(".grp")
+
+        // it will select everything with grp
+        // let h_tag = document.querySelectorAll(".grp")
+        // console.log(h_tag)
+
+
+        let h_tag = document.querySelector(".grp")
+        // h_tag.innerText = "Hello world"
+        // console.log(h_tag.innerText);
+        // h_tag.innerText = "Hello world"
+        h_tag.innerHTML=`<strong>DOM manipulation</strong>`
+    </script>
+</body>
+</html>
