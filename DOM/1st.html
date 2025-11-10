@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1st</title>
+    <style>
+        .grp{
+            color:blue;
+            /* visibility: none; */
+        }
+        .theme{
+            color: red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <h1 class="grp">DOM</h1>
     <h1 id="htag">New</h1>
     <h1 id="htag">Very New</h1>
     <p class="grp">Para</p>
+    <p class="grp">Graph</p>
     <script>
         // let h_tag = document.getElementById("htag")
         // let h_tag = document.getElementsByTagName("h1")
@@ -19,16 +30,21 @@
         // query selector will select only the first one 
         // let h_tag = document.querySelector(".grp")
 
-        // it will select everything with grp
+        // it will select everything with grp class
         // let h_tag = document.querySelectorAll(".grp")
         // console.log(h_tag)
 
 
-        let h_tag = document.querySelector(".grp")
+        // let h_tag = document.querySelector(".grp")
         // h_tag.innerText = "Hello world"
         // console.log(h_tag.innerText);
         // h_tag.innerText = "Hello world"
-        h_tag.innerHTML=`<strong>DOM manipulation</strong>`
+        // h_tag.innerHTML=`<strong>DOM manipulation</strong>`
+
+        let p_tag = document.getElementsByTagName("p")
+        // console.log(p_tag)
+        p_tag[0].setAttribute("class","theme")
+        
     </script>
 </body>
 </html>
