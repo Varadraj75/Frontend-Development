@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fibo(num){
+            const series=[0,1];
+            for (let i=2; i<num; i++){
+                series.push(series[i-1]+series[i-2]);
+            }
+            return series
+        }
+        console.log(fibo(10));
+        
+    </script>
+</body>
+</html>
+
