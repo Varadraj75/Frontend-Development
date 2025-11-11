@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="grp">DOM</p>
+    <h1 class="grp">NEw</h1>
+    <h1 class="grp"></h1>
+    <p class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, modi.</p>
+    <p class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem mollitia cumque animi repellendus, dignissimos ullam perspiciatis obcaecati maiores suscipit autem odit unde, quos doloribus commodi consequuntur nihil quibusdam, quae iure molestias ea? Quia, aliquid nihil veniam vel, recusandae neque esse exercitationem incidunt officiis, cumque earum minima quibusdam iure maiores? Necessitatibus.</p>
+    <p class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem mollitia cumque animi repellendus, dignissimos ullam perspiciatis obcaecati maiores suscipit autem odit unde, quos doloribus commodi consequuntur nihil quibusdam, quae iure molestias ea? Quia, aliquid nihil veniam vel, recusandae neque esse exercitationem incidunt officiis, cumque earum minima quibusdam iure maiores? Necessitatibus.</p>
+    <p class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem mollitia cumque animi repellendus, dignissimos ullam perspiciatis obcaecati maiores suscipit autem odit unde, quos doloribus commodi consequuntur nihil quibusdam, quae iure molestias ea? Quia, aliquid nihil veniam vel, recusandae neque esse exercitationem incidunt officiis, cumque earum minima quibusdam iure maiores? Necessitatibus.</p>
+    <p class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem mollitia cumque animi repellendus, dignissimos ullam perspiciatis obcaecati maiores suscipit autem odit unde, quos doloribus commodi consequuntur nihil quibusdam, quae iure molestias ea? Quia, aliquid nihil veniam vel, recusandae neque esse exercitationem incidunt officiis, cumque earum minima quibusdam iure maiores? Necessitatibus.</p>
+
+    <script>
+        const element = document.createElement("h1")
+        const text = document.createTextNode("Passing the message")
+        element.append(text)
+        document.body.append(element)
+
+        let nodeList = document.querySelectorAll(".items")
+        let collections = document.getElementsByClassName("items")
+        const newItem = document.createElement("p");
+        newItem.innerText="new Item"
+        newItem.className="items"
+        document.body.append(newItem)
+    </script>
+</body>
+</html>
