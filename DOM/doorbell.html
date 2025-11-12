@@ -7,6 +7,7 @@
 </head>
 <body>
     <button>Door bell</button>
+    <button class="dar">Dark theme</button>
     <script>
         const doorBell = new Audio("doorbell.mp3")
         const btn = document.querySelector("button")
@@ -14,6 +15,11 @@
         function opendoor(){
             doorBell.play();
             console.log("Opening Door.....")
+        }
+        const dark = document.querySelector(".dar")
+        dark.addEventListener('click',darkk)
+        function darkk(){
+            document.body.style.backgroundColor="black"
         }
     </script>
 </body>
