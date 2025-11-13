@@ -1,0 +1,6 @@
+EVENT PROBAGATION
+
+3 phases
+    1. Event Capturing
+    2. Target
+    3. Event Bubbling

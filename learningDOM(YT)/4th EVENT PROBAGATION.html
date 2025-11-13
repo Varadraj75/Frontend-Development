@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT PROBAGATION</title>
+</head>
+<body>
+    <!-- EVENT PROBAGATION -->
+     <div class="div2">
+        <div class="div1">
+            <button>click</button>
+        </div>
+     </div>
+     <script>
+        // Event probagation
+        window.addEventListener("click",function(){
+            console.log('window');
+            
+        },true);
+        document.addEventListener("click",function(){
+            console.log('document');
+            
+        },true);
+        document.querySelector(".div2").addEventListener("click",function(){
+            console.log("DIV2");
+        },true);
+        document.querySelector(".div1").addEventListener("click",function(){
+            console.log("DIV1");
+        },true);
+        document.querySelector("button").addEventListener("click",function(e){
+            console.log(e.target.innerText="clicked");
+        },true)
+        
+     </script>
+</body>
+</html>
