@@ -11,8 +11,18 @@
     <script>
         const btn = document.querySelector("img");
         const input = document.querySelector("input")
-        input.addEventListener("input",function(){
-            console.log("i am typing ")
+        const messageElement = document.createElement("strong")
+        input.addEventListener("input",function(e){
+            
+            const username =(e.target.value);
+            if(username.length<4 & username.length!==0){
+                
+                messageElement.innerText="Username Should exceed 4 digits"
+                document.body.append(messageElement)
+            }
+            else{
+                messageElement.innerText=""
+            }
         })
     </script>
 </body>

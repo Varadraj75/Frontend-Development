@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="main-heading">Event Listners</h1>
+    <div class="container">
+        <button class="reveal-btn boxes">Reveal More</button>
+        <div class="hidden-content boxes">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit ab sint atque ea nihil, minima reprehenderit incidunt et? Magnam, delectus culpa nemo distinctio at sit dolorem. Doloremque, veniam? Et beatae voluptate, nobis eos alias obcaecati hic cupiditate excepturi maxime accusantium laboriosam? Qui nobis non aspernatur saepe dicta odit, mollitia maiores.</div>
+    </div>
+    <script>
+        const revealBTN = document.querySelector(".reveal-btn")
+
+        const hiddenContent = document.querySelector(".hidden-content")
+        function revealcontent(){
+            if(hiddenContent.classList.contains("reavel-btn")){
+                hiddenContent.classList.remove("reveal-btn")
+            }
+            else{
+                hiddenContent.classList.add("reveal-btn")
+            }
+        }
+        revealBTN.addEventListener('click',revealcontent);
+    </script>
+</body>
+</html>
