@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p{
+            font-size: 30px;
+            font-family: cursive;
+            color:aqua;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, animi officia sapiente qui velit mollitia nam nisi saepe eligendi accusantium.</p>
+    <button>hide</button>
+    <input type="text">
+   
+    <script>
+        const p = document.querySelector("p");
+        const button = document.querySelector("button");
+        const input = document.querySelector("input")
+        // button.addEventListener("click",()=>{
+        //     p.classList.toggle("p");
+        // })
+        // input.addEventListener("input",(e)=>{
+        //     // console.log("Typing..")
+        //     console.log(e.target.value);
+            
+        // })
+        input.addEventListener("change",(e)=>{
+            // console.log("Typing..")
+            console.log(e.target.value);
+            
+        })
+    </script>
+</body>
+</html>
