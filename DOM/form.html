@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 50vh;
+            margin: auto;
+            /* margin-top: 5vh; */
+            background-color: blanchedalmond;
+            padding: 2rem;
+            border-radius: 2rem;
+        }
+        input{
+            width: max-content;
+            margin: auto;
+        }
+        h2{
+            margin: auto;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/notiflix@3.2.8/src/notiflix.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <form>
+        <h2>Sign In</h2>
+        <input type="text" placeholder="Enter your name" id="name">
+        <input type="email" placeholder="Enter your email" id="email">
+        <input type="number" placeholder="Enter your number" id="mobile">
+        <input type="password" placeholder="Enter your password" id="password">
+        <input type="password" placeholder="Confirm password" id="cnfpassword">
+        <input type="submit" id="btn">
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/notiflix@3.2.8/dist/notiflix-aio-3.2.8.min.js"></script>
+    <script>
+        const submit = document.getElementById("btn");
+        const nameField = document.getElementById("name");
+        const mail = document.getElementById("email");
+        submit.addEventListener("click",handleAFormSubmition);
+        function handleAFormSubmition(e)
+        {
+            e.preventDefault();
+            if(nameField.value.length<=1)
+            {
+                Notiflix.Notify.failure("Invalid Name")
+            }
+            if(!validateMail(mail.value))
+            {
+                console.log("Warning")
+                Notiflix.Notify.failure("Invalid Email")
+            }
+            
+        }
+        function validateMail(mail){
+            console.log(mail.split("@"));
+            return (mail.includes("@") && mail.split("@")[1].length>3);
+            
+        }
+    </script>
+</body>
+</html>

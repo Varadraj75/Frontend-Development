@@ -27,3 +27,6 @@ Thumbs.db
 # JDKs (too large to store in repo)
 *.jdk/
 oracleJdk-24.jdk/
+
+.git
+Bootstrap
