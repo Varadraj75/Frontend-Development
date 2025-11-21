@@ -11,6 +11,18 @@
             padding: 0;
             box-sizing: border-box;
         }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .container>div{
+            width: 300px;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
     </style>
 </head>
 <body>
@@ -25,6 +37,12 @@
         const container = document.querySelector(".container");
         const api = "https://691ff57031e684d7bfcb2b5d.mockapi.io/api/v1/users";
         const form = document.querySelector("form");
+        container.addEventListener("click",function(e){
+            if(e.target.tagName=="BUTTON"){
+                deleteUser(e.target.getAttribute("data"))
+            }
+            
+        })
         form.addEventListener("submit",handleSubmit);
         function handleSubmit(e){
             e.preventDefault();
@@ -47,9 +65,13 @@
             container.innerHTML=""
             users.forEach(function(ele){
                 let div = document.createElement("div");
-                div.innerHTML=`<img src=${ele.image}><p>${ele.name}</p>`
+                div.innerHTML=`<img src=${ele.image}><p>${ele.name}</p><button data=${ele.id}>Delete</button>`
                 container.append(div);
             })
+        }
+        function deleteUser(id){
+            const response = fetch(`${api}/${id}`,{method:"DELETE"})
+            response.then(res=>fetchUsers())
         }
         fetchUsers();
     </script>
