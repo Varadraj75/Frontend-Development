@@ -65,7 +65,7 @@
             container.innerHTML=""
             users.forEach(function(ele){
                 let div = document.createElement("div");
-                div.innerHTML=`<img src=${ele.image}><p>${ele.name}</p><button data=${ele.id}>Delete</button>`
+                div.innerHTML=`<img src=${ele.image}><p>${ele.name}</p><button>Edit</button><button data=${ele.id}>Delete</button>`
                 container.append(div);
             })
         }
