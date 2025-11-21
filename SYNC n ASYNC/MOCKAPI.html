@@ -26,7 +26,7 @@
             let image = form.image.value;
             const data = JSON.stringify({name,image});
             const response = fetch(api,{method:"POST",headers:{"Content-type":"application/json"},body:data});
-            response.then((res)=> console.log(res));
+            response.then((res)=> fetchUsers());
 
 
         }
@@ -37,6 +37,7 @@
             })
         }
         function renderUsers(users){
+            container.innerHTML=""
             users.forEach(function(ele){
                 let div = document.createElement("div");
                 div.innerHTML=`<img src=${ele.image}><p>${ele.name}</p>`
