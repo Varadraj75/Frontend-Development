@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="logo" content="logo" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <input type="text" placeholder="Name" name="name">
+        <input type="text" placeholder="Image URL" name="image">
+        <input type="submit" >
+    </form>
+    <div class="container">
+    </div>
+    <script>
+        const container = document.querySelector(".container");
+        const api = "https://691ff57031e684d7bfcb2b5d.mockapi.io/api/v1/users";
+        const form = document.querySelector("form");
+        form.addEventListener("submit",handleSubmit);
+        function handleSubmit(e){
+            e.preventDefault();
+            console.log("Hello");
+            let name = form.name.value;
+            let image = form.image.value;
+            const data = JSON.stringify({name,image});
+            const response = fetch(api,{method:"POST",headers:{"Content-type":"application/json"},body:data});
+            response.then((res)=> console.log(res));
+
+
+        }
+        function fetchUsers(){
+            const response = fetch(api);
+            response.then((res)=>res.json()).then((users)=>{
+                renderUsers(users);
+            })
+        }
+        function renderUsers(users){
+            users.forEach(function(ele){
+                let div = document.createElement("div");
+                div.innerHTML=`<img src=${ele.image}><p>${ele.name}</p>`
+                container.append(div);
+            })
+        }
+        fetchUsers();
+    </script>
+</body>
+</html>
