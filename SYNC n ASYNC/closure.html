@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" placeholder="search" id="ip">
+<button id="btn">search</button>
+
+
+    <script>
+    //   function outer(){
+    //     let count=0;
+    //     function inner(){
+    //         count++;
+    //         return count;
+    //     }
+    //     return inner;
+    //   }
+    //   console.log(outer())
+
+    //   function multiplyBy(n){
+    //     return function(x){
+    //         console.log("X is: ",x,"N is: ",n);
+    //         return x*n;
+    //     }
+    //   }
+    //   const double = multiplyBy(2);
+    //   const triple = multiplyBy(3);
+
+    //   console.log(double(5));
+    //   console.log(triple(3))
+
+
+    const input=document.querySelector("#ip");
+    const btn=document.querySelector("#btn");
+    function trackfirst(){
+       let firstSearch=null;
+        return function (search) {
+            if(!firstSearch) firstSearch=search;
+                console. log(` current search ${search} , and first search ${firstSearch}`)
+                // firstSearch = search
+                }
+}
+let track=trackfirst();
+                btn. addEventListener ("click", function() {
+                        track (input.value)} )
+
+    </script>
+</body>
+</html>
