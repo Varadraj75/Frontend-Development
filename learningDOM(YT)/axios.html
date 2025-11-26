@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main"></div>
+    <button class="prev">Prev</button>
+    <button class="next">Next</button>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const next = document.querySelector(".next");
+        const prev = document.querySelector(".prev");
+        const main =document.querySelector(".main")
+        let allproducts =[]
+        let limit =5;
+        let skip=0;
+        const api = "https://dummyjson.com/products";
+        const baseapi = axios.create({
+            baseURL:api
+        })
+        next.addEventListener("click",function(){
+            skip+=8;
+            getProducts(limit,skip)
+        })
+        prev.addEventListener("click",function(){
+            skip -=8;
+            getProducts(limit,skip)
+        })
+        async function getProducts(limit,skip) {
+            if(skip===0){
+                prev.disabled=true;
+            }
+            if(skip>0){
+                prev.disabled=false;
+            }
+            let response = await baseapi.get(`?limit=${limit}&skip=${skip}`);
+            allproducts = response.data.products;
+            console.log(allproducts);
+            if(allproducts.length>0){
+                renderUI(allproducts)
+            }
+        }
+        getProducts(limit,skip);
+        function renderUI(products){
+            main.innerHTML="";
+            products.forEach((product) =>{
+                
+                const {price,brand ,description,images,title,rating}=product
+                console.log(price,brand , description,images,title,rating);
+                const productCard = document.createElement("div");
+                productCard.innerHTML=`<img src=${images[0]}><h4>${title}</h4><i>${description}</i><small>${rating}</small><strong>${price}</strong>`;
+                main.append(productCard);
+            })
+
+            }
+        
+    </script>
+</body>
+</html>
