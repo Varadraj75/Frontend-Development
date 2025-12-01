@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class bike{
+            constructor(rpm,color,model){
+                this.rpm = rpm;
+                this.color = color;
+                this.model = model
+            }
+            enginestop(){
+                return "Engine is stopped"
+            }
+        }
+        class yamaha extends bike{
+            constructor(rpm,color,model){
+               super(rpm,color,model)
+                
+            }
+            engine(){
+                return "Engine is starting"
+            }
+        }
+        let a = new yamaha(220,"black","as234")
+        console.log(a.engine());
+        console.log(a.enginestop());
+        
+    </script>
+</body>
+</html>
