@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal{
+            color = "black";
+            constructor(name){
+                this.name = name; 
+                console.log("HEllo new instance created");
+            }
+            eat(){
+                return(this.name+" is eating......");
+            }
+        }
+        let doge = new Animal("dog");
+        let elephant = new Animal("Elephant")
+        console.log(doge,elephant);
+
+        class dog extends Animal{ 
+            constructor(name,bread){
+                super(name)
+                this.bread = bread; 
+            }
+            bark(){
+                super.eat()
+                return(this.bread+"dark");
+
+            }
+        }
+        let husky = new dog("charlie777","husky");
+        console.log(husky.bark());
+        console.log(husky.eat());
+    </script>
+</body>
+</html>
