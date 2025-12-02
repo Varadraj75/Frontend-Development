@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // it is changing because , in not primitve we pass address
+        let arr = [1,2,3,4]
+        let newarr = arr;
+        newarr[2]=5;
+        // newarr=[2,5,6] -> it will reflect no changes 
+        console.log(arr);
+       
+        console.log(Array());
+        //  it creates the instance
+        let conarr = new Array();
+        console.log(conarr);
+        // we use __proto__ to get the access of the properties of the parents
+        console.log(conarr.__proto__)
+        // we use this to  know the properties of the parents
+        console.log(Array.prototype);
+        
+
+        // it will not change , as it is a primitve data type , we pass the value 
+        let x=10;
+        let y=x;
+        y=20;
+        console.log(x);
+
+        Array.prototype.sayHello = function(){
+            return "Hello from child 1"
+        }
+        console.log(arr.sayHello());
+        
+
+        // create a function that will check if the array having target or not m if target present return index or return -1
+
+        // tararr=[1,2,3,4,4,6,7,7,23523,346,346,346,]
+        // tar = prompt("Enter the target number ")
+        // function target(target){
+        //     for(let i=0; i<tararr.length; i++){
+        //         if(target==arr[i]){
+        //             console.log(i)
+        //         }
+        //         else{
+        //             return -1
+        //         }
+        //     }
+        // }
+        // target(tar);
+        
+        let protoarray = new Array();
+        protoarray.__proto__.findtarget=function(abc){
+            for(let i=0; i<this.length; i++){
+                if(this[i]===abc){
+                    return i
+                }
+            }
+            return -1
+        }
+        let xArray=[1,2,3,4,5,6];
+        console.log(xArray.findtarget(6))
+    </script>
+</body>
+</html>
