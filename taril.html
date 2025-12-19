@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background-color: black;
+            color: white;
+            height: 5vh;
+            align-items: center;
+            display: flex;
+        }
+        h2{
+            color: white;
+            align-items: center;
+            flex-grow: 3;
+        }
+        span{
+            height: 3px;
+            width: 20px;
+            background-color: whitesmoke;
+            display: block;
+            margin: 3px;
+
+        }
+        label{
+            display: none;
+        }
+        input{
+            display: none;
+        }
+        @media(max-width:600px){
+            label{
+                display: block;
+            }
+            nav{
+                display: none;
+            }
+            input:checked~nav{
+                display: flex;
+            }
+            nav{
+                position:absolute;
+                top: 5vh;
+                background-color: black;
+                color: whitesmoke;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>HEading</h2>
+        <label for="Nav">
+            <span></span><span></span><span></span>
+        </label>
+        <input type="text" id="Nav">
+        <nav>
+            <a href="">abc</a>
+            <a href="">roj</a>
+            <a href="">ran</a>
+            <a href="">cos</a>
+        </nav>
+    </header>
+</body>
+</html>
